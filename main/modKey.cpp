@@ -1,8 +1,8 @@
-#include  "modAlphakey.h"
+#include  "modKey.h"
 
 using namespace std;
 
-std::wstring modAlphakey::encrypt(const std::wstring& open_text) // шифрование
+std::wstring modKey::encrypt(const std::wstring& open_text) // шифрование
 {
     wstring tabl = open_text;
     int dl, nstrok, index, x;
@@ -21,7 +21,7 @@ std::wstring modAlphakey::encrypt(const std::wstring& open_text) // шифров
     return tabl;
 }
 
-std::wstring modAlphakey::decrypt(const std::wstring& cipher_text) // расшифрование
+std::wstring modKey::decrypt(const std::wstring& cipher_text) // расшифрование
 {
     wstring tabl = cipher_text;
     int dl, nstrok, index, x;
