@@ -3,7 +3,7 @@ using namespace std;
 bool isValid(const wstring& s)
 {
     for (auto c:s)
-        if (!isalpha(c) || !isupper(c))
+        if (!iswalpha(c) || !iswupper(c))
             return false;
     return true;
 }
